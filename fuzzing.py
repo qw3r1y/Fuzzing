@@ -4,13 +4,13 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 urls = []
 #It will be added here with the file location where our urls are.
-with open("C:\\Users\\Hüseyin Can\\Documents\\Python\\Tools\\urller.txt","r+") as file:
+with open("C:\\Users\\example\\example\\Python\\Tools\\urller.txt","r+") as file:
     for row in file:
         urls.append(row.split("\n")[0])
 
 fuzzing = []      
 #Here we will add the payload file with the location of the list we want our urls to come to the end. 
-with open("C:\\Users\\Hüseyin Can\\Documents\\Python\\Tools\\fuzzing.txt","r+") as filex:
+with open("C:\\Users\\example\\example\\Python\\Tools\\fuzzing.txt","r+") as filex:
     for row in filex:
         fuzzing.append(row.split("\n")[0])
 
@@ -34,7 +34,7 @@ with open("C:\\Users\\Hüseyin Can\\Documents\\Python\\Tools\\fuzzing.txt","r+")
 
 sensitive = []
 #Here we will add the payload file with the location of the list we want our urls to come to the end.
-with open("C:\\Users\\Hüseyin Can\\Documents\\Python\\Tools\\sensitive.txt","r+") as filec:
+with open("C:\\Users\\example\\v\\Python\\Tools\\sensitive.txt","r+") as filec:
     for row in filec:
         sensitive.append(row.split("\n")[0])
 
